@@ -1,6 +1,6 @@
 library(XML)
 
-file.to.write.to <- "~/Desktop/building_occupancy.log"
+file.to.write.to <- sprintf("~/Documents/McClay\ Library\ Student\ Count/building_occupancy_%s.log", Sys.Date())
 poll.gap.seconds <- 60
 
 cat("\"Time\",", "\"Building Occupancy\"\n", sep="", file = file.to.write.to)
